@@ -9,9 +9,13 @@ COPY package*.json ./
 # Install ALL dependencies (including devDependencies for tsx)
 RUN npm install
 
-# Copy source code
+# Copy all necessary directories
 COPY src ./src
+COPY config ./config
+COPY database ./database
+COPY scripts ./scripts
 COPY public ./public
+COPY data ./data
 
 # Create non-root user
 RUN addgroup -g 1001 -S nodejs && \
