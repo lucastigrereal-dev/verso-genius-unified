@@ -16,9 +16,6 @@ coverage
 __tests__
 
 # Environment
-.env
-.env.local
-.env.*.local
 
 # IDE
 .vscode
