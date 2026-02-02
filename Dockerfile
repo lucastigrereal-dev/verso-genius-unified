@@ -5,6 +5,7 @@ WORKDIR /app
 
 # Copy package files
 COPY package*.json ./
+COPY .env.production .env
 
 # Install ALL dependencies (including devDependencies for tsx)
 RUN npm install
