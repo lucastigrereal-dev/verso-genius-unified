@@ -1,14 +1,16 @@
-# Simple Node.js Dockerfile for Railway
 FROM node:20-alpine
 
 WORKDIR /app
 
 # Copy package files
 COPY package*.json ./
-COPY .env.production .env
 
-# Install ALL dependencies (including devDependencies for tsx)
+# Install dependencies
 RUN npm install
+
+# Copy startup script
+COPY start.sh ./
+RUN chmod +x start.sh
 
 # Copy all necessary directories
 COPY src ./src
@@ -25,12 +27,11 @@ RUN addgroup -g 1001 -S nodejs && \
 
 USER nodejs
 
-# Expose port
 EXPOSE 12345
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
   CMD node -e "require('http').get('http://localhost:12345/health', (r) => { process.exit(r.statusCode === 200 ? 0 : 1) })"
 
-# Start server with tsx
-CMD ["npx", "tsx", "src/api/server.ts"]
+# Start with script
+CMD ["sh", "start.sh"]
