@@ -92,6 +92,9 @@ import crewsRoutes from './routes/crews'
 import eventsRoutes from './routes/events'
 import gachaRoutes from './routes/gacha'
 import nftRoutes from './routes/nft'
+import adminRoutes from './routes/admin'
+import friendsRoutes from './routes/friends'
+import battlesRoutes from './routes/battles'
 
 // TODO: Importar rotas adicionais quando forem criadas
 // import exercisesRoutes from './routes/exercises'
@@ -113,6 +116,9 @@ app.route('/api/v1/crews', crewsRoutes)
 app.route('/api/v1/events', eventsRoutes)
 app.route('/api/v1/gacha', gachaRoutes)
 app.route('/api/v1/nft', nftRoutes)
+app.route('/api/v1/admin', adminRoutes)
+app.route('/api/v1/friends', friendsRoutes)
+app.route('/api/v1/battles', battlesRoutes)
 
 // app.route('/api/v1/exercises', exercisesRoutes)
 // app.route('/api/v1/generator', generatorRoutes)
