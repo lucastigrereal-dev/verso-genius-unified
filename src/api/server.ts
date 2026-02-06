@@ -78,12 +78,37 @@ app.get('/api/public/rimas', optionalAuthMiddleware, async (c) => {
 
 app.use('/api/v1/*', supabaseAuthMiddleware)
 
-// TODO: Importar rotas protegidas quando forem criadas
+// Importar rotas
+import currencyRoutes from './routes/currency'
+import shopRoutes from './routes/shop'
+import challengesRoutes from './routes/challenges'
+import paymentsRoutes from './routes/payments'
+import battlePassRoutes from './routes/battlePass'
+import achievementsRoutes from './routes/achievements'
+import referralsRoutes from './routes/referrals'
+import leaderboardRoutes from './routes/leaderboard'
+import streaksRoutes from './routes/streaks'
+import crewsRoutes from './routes/crews'
+import eventsRoutes from './routes/events'
+
+// TODO: Importar rotas adicionais quando forem criadas
 // import exercisesRoutes from './routes/exercises'
 // import generatorRoutes from './routes/generator'
-// import leaderboardRoutes from './routes/leaderboard'
 // import socialRoutes from './routes/social'
 // import profileRoutes from './routes/profile'
+
+// Rotas monetização
+app.route('/api/v1/currency', currencyRoutes)
+app.route('/api/v1/shop', shopRoutes)
+app.route('/api/v1/challenges', challengesRoutes)
+app.route('/api/v1/payments', paymentsRoutes)
+app.route('/api/v1/battle-pass', battlePassRoutes)
+app.route('/api/v1/achievements', achievementsRoutes)
+app.route('/api/v1/referrals', referralsRoutes)
+app.route('/api/v1/leaderboard', leaderboardRoutes)
+app.route('/api/v1/streaks', streaksRoutes)
+app.route('/api/v1/crews', crewsRoutes)
+app.route('/api/v1/events', eventsRoutes)
 
 // app.route('/api/v1/exercises', exercisesRoutes)
 // app.route('/api/v1/generator', generatorRoutes)
