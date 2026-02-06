@@ -1,0 +1,48 @@
+[
+  {
+    "verso": "Minha rima é pesada como chumbo no verso\nNa batida calibrada, no flow eu me empenho\nToda letra é verdade, sem roteiro inverso\nCada barra é certeira, eu desenho o meu empenho",
+    "tema": "batalha",
+    "familia_rima": "enho",
+    "dificuldade": "hard",
+    "citacao_real": null,
+    "mc_source": null,
+    "musica_source": null,
+    "ranking": 92,
+    "is_featured": true
+  },
+  {
+    "verso": "No amor eu me perco, mas não perco a razão\nCoração de poeta, verso de campeão\nCada linha é um suspiro, cada rima uma canção\nTe amo em cada barra, essa é minha missão",
+    "tema": "amor",
+    "familia_rima": "ão",
+    "dificuldade": "medium",
+    "ranking": 85,
+    "is_featured": false
+  },
+  {
+    "verso": "Da periferia eu vim, com a voz da multidão\nRap consciente, luta pela transformação\nCada palavra é protesto, cada verso é revolução\nPelo povo oprimido, essa é minha convicção",
+    "tema": "social",
+    "familia_rima": "ão",
+    "dificuldade": "hard",
+    "citacao_real": "Inspirado em Racionais MCs",
+    "mc_source": "Mano Brown",
+    "musica_source": null,
+    "ranking": 95,
+    "is_featured": true
+  },
+  {
+    "verso": "Levanta a cabeça, não desiste não\nO mundo é difícil, mas você é campeão\nCada dia é luta, cada passo é direção\nSiga em frente sempre, essa é a missão",
+    "tema": "motivacao",
+    "familia_rima": "ão",
+    "dificuldade": "easy",
+    "ranking": 70,
+    "is_featured": false
+  },
+  {
+    "verso": "Métrica perfeita, sílaba no lugar\nCada palavra encaixa, tudo vai rimar\nTécnica refinada, flow pra admirar\nNo compasso da batida eu sei me expressar",
+    "tema": "tecnica",
+    "familia_rima": "ar",
+    "dificuldade": "medium",
+    "ranking": 80,
+    "is_featured": false
+  }
+]
