@@ -6,7 +6,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { Mic, Square, Play, Pause, Download, Trash2 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { getRecordingService, RecordingStorage, type Recording } from '../../services/recordingService'
+import { getRecordingService, RecordingStorage, type Recording } from '../../../services/recordingService'
 import { MetronomeCompact } from './Metronome'
 
 interface FreestyleRecorderProps {

@@ -5,7 +5,7 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { Play, Pause, Square, Volume2, VolumeX } from 'lucide-react'
-import { getAudioService, CC0_BEATS, type Beat } from '../../services/audioService'
+import { getAudioService, CC0_BEATS, type Beat } from '../../../services/audioService'
 
 export function BeatPlayer() {
   const [selectedBeat, setSelectedBeat] = useState<Beat | null>(null)

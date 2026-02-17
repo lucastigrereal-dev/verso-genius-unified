@@ -1,6 +1,4 @@
-/**
- * Gamification Components Barrel Export
- */
-
-export { Leaderboard } from './Leaderboard'
-export { StreakIndicator } from './StreakIndicator'
+export { XPBar } from './XPBar';
+export { LevelBadge } from './LevelBadge';
+export { StreakIndicator } from './StreakIndicator';
+export { DailyChallengeCard } from './DailyChallengeCard';

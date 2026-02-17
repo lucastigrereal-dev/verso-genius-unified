@@ -249,9 +249,8 @@ export function FatalityComBeat({ bpm, isPlaying, onComplete }: FatalityComBeatP
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    animate={isPlaying && beat === (i * 2) % 4 ? { opacity: 1, x: [0, 10, 0] } : { opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.3 }}
-                    animate={isPlaying && beat === (i * 2) % 4 ? { x: [0, 10, 0] } : {}}
                     className="text-lg text-red-400 font-bold mb-2 last:mb-0"
                   >
                     🔥 {line}
