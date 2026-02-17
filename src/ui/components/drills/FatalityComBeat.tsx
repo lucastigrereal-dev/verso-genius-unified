@@ -7,7 +7,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Flame, Zap, Trophy, SkipForward } from 'lucide-react'
-import { MetronomeCompact } from '../Metronome'
+import { MetronomeCompact } from '../audio/Metronome'
 
 interface Fatality {
   id: string

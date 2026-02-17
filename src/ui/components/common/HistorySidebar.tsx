@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { History, ChevronRight, Heart, Star, X, Menu } from 'lucide-react';
-import type { Rima } from '../types';
+import type { Rima } from '../../types';
 
 interface HistorySidebarProps {
   history: Rima[];

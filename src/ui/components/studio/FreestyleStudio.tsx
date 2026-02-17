@@ -4,12 +4,12 @@
  */
 
 import { useState, useEffect } from 'react'
-import { BeatPlayer } from './BeatPlayer'
-import { Metronome } from './Metronome'
-import { FreestyleRecorder } from './FreestyleRecorder'
-import { RimaNaBatida } from './drills/RimaNaBatida'
-import { FatalityComBeat } from './drills/FatalityComBeat'
-import { getAudioService } from '../../services/audioService'
+import { BeatPlayer } from '../audio/BeatPlayer'
+import { Metronome } from '../audio/Metronome'
+import { FreestyleRecorder } from '../audio/FreestyleRecorder'
+import { RimaNaBatida } from '../drills/RimaNaBatida'
+import { FatalityComBeat } from '../drills/FatalityComBeat'
+import { getAudioService } from '../../../services/audioService'
 
 type DrillType = 'rima-batida' | 'fatality' | null
 

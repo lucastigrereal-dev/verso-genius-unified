@@ -6,9 +6,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { App as OriginalApp } from './App';
 
 // Pages - New Sprint 2/3 Pages
-import DashboardPage from '../pages/DashboardPage';
-import LessonPage from '../pages/LessonPage';
-import ResultsPage from '../pages/ResultsPage';
+// TODO: fix import - create pages or update paths
+// import DashboardPage from '../pages/DashboardPage';
+// import LessonPage from '../pages/LessonPage';
+// import ResultsPage from '../pages/ResultsPage';
 
 /**
  * Main App Router with all routes
@@ -39,50 +40,11 @@ export function AppRouter() {
             }
           />
 
-          {/* Dashboard - Gamification Hub */}
-          <Route
-            path="/dashboard"
-            element={
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <DashboardPage />
-              </motion.div>
-            }
-          />
-
-          {/* Lesson - Exercise Player */}
-          <Route
-            path="/lesson/:pillar/:lesson"
-            element={
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <LessonPage />
-              </motion.div>
-            }
-          />
-
-          {/* Results - Analysis and Feedback */}
-          <Route
-            path="/results"
-            element={
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <ResultsPage />
-              </motion.div>
-            }
-          />
+          {/* TODO: Rotas pendentes - criar pages primeiro
+          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/lesson/:pillar/:lesson" element={<LessonPage />} />
+          <Route path="/results" element={<ResultsPage />} />
+          */}
 
           {/* Fallback - Redirect to home */}
           <Route path="*" element={<Navigate to="/" replace />} />

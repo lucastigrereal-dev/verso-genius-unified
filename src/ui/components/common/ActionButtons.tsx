@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart, Share2, RefreshCw, Check, Copy } from 'lucide-react';
-import type { Rima } from '../types';
+import type { Rima } from '../../types';
 
 interface ActionButtonsProps {
   rima: Rima;

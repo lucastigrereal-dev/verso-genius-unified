@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Music, ScrollText, Star, Trophy } from 'lucide-react';
-import type { Stats } from '../types';
+import type { Stats } from '../../types';
 
 interface StatsHeaderProps {
   stats: Stats;

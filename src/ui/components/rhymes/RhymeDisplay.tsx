@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mic2, Quote } from 'lucide-react';
-import type { Rima } from '../types';
-import { ScoreBar } from './ScoreBar';
-import { ActionButtons } from './ActionButtons';
+import type { Rima } from '../../types';
+import { ScoreBar } from '../common/ScoreBar';
+import { ActionButtons } from '../common/ActionButtons';
 
 interface RhymeDisplayProps {
   rima: Rima | null;

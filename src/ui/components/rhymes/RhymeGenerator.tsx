@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Sparkles, Flame, Brain, BookOpen, Loader2 } from 'lucide-react';
-import { ESTILOS, type RhymeGeneratorState } from '../types';
+import { ESTILOS, type RhymeGeneratorState } from '../../types';
 
 interface RhymeGeneratorProps {
   tema: string;

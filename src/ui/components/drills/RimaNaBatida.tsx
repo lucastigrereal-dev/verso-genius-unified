@@ -6,7 +6,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Check, X, SkipForward } from 'lucide-react'
-import { MetronomeCompact } from '../Metronome'
+import { MetronomeCompact } from '../audio/Metronome'
 
 interface RimaChallenge {
   id: string
