@@ -62,15 +62,10 @@ app.get('/health', async (c) => {
 
 // TODO: Importar rotas quando forem criadas
 // import authRoutes from './routes/auth'
-// import publicRimasRoutes from './routes/public/rimas'
+import rimasRoutes from './routes/rimas'
 
 // app.route('/api/auth', authRoutes)
-// app.route('/api/public', publicRimasRoutes)
-
-// Placeholder para rotas públicas
-app.get('/api/public/rimas', optionalAuthMiddleware, async (c) => {
-  return c.json({ message: 'Public rimas endpoint - TODO: implement' })
-})
+app.route('/api/public/rimas', rimasRoutes)
 
 // ========================================
 // PROTECTED ROUTES (auth obrigatório)

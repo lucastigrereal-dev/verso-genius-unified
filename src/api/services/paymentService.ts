@@ -8,9 +8,13 @@ import { supabase } from '../../../config/supabase'
 import { CurrencyService } from './currencyService'
 import type { Purchase, ShopProduct } from '../../types/monetization'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
-  apiVersion: '2024-11-20.acacia'
-})
+// Initialize Stripe only if key is available
+let stripe: Stripe | null = null
+if (process.env.STRIPE_SECRET_KEY) {
+  stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+    apiVersion: '2024-11-20.acacia'
+  })
+}
 
 export class PaymentService {
   /**
